@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CB5F5</color>
+    <color name="colorBrownish">#F5C98A</color>
+    <color name="colorPrimaryDark">#1995AD</color>
+    <color name="colorBlack">#505050</color>
+    <color name="colorAccent">#FCFDFE</color>
+    <color name="colorAccentDark">#f7efe2</color>
+    <color name="colorLightGrey">#B3D8D8</color>
+    <color name="colorFood">#A2A548</color>
+    <color name="bgBottomNavigation">#5C8C63</color>
+</resources>

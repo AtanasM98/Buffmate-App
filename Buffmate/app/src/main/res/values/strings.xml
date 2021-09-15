@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Buffmate</string>
+    <string name="overview">Overview</string>
+    <string name="user">User</string>
+    <string name="age">Age:</string>
+    <string name="weight">Weight:</string>
+    <string name="CalorieIntake">Calories</string>
+    <string name="Steps">Steps</string>
+    <string name="dailyWater">Daily water goal:</string>
+    <string name="weightGoal">Weight Goal:</string>
+    <string name="DefaultWatGoalMin">0L</string>
+    <string name="DefaultWatGoalMax">2L</string>
+    <string name="DefaultWeightGoalMin">60 kg</string>
+    <string name="DefaultWeightGoalMax">90 kg</string>
+    <string name="food">Food</string>
+    <string name="btnRemFood">Remove</string>
+    <string name="btnAddFood">Add</string>
+    <string name="btnScanBar">Scan Barcode</string>
+    <string name="tvRecommend">Recommended foods:</string>
+    <string name="tvRunning">Running</string>
+    <string name="todayYouveRan">Today You\'ve \n Ran:</string>
+    <string name="DefaultRunGoalMin">0km</string>
+    <string name="DefaultRunGoalMax">10km</string>
+    <string name="btnStartTracking">Start Tracking</string>
+    <string name="tvStats">Statistics</string>
+    <string name="tvWeek">Week 1</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="btnBack">Back</string>
+    <string name="Settings">Settings</string>
+    <string name="addFood">Add Food</string>
+    <string name="name">Name</string>
+    <string name="foodName">Food Name</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_maps_tracking">Map</string>
+    <string name="pausetracking">Pause Run</string>
+    <string name="finishtracking">Finish run</string>
+    <string name="title_activity_design_test_activities">DesignTestActivities</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+</resources>

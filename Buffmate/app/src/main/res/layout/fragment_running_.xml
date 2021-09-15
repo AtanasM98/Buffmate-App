@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGrey"
+    tools:context=".Running_Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle"
+                android:elevation="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTodayUveRan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/todayYouveRan"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvRunGoalMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="15dp"
+                            android:text="@string/DefaultRunGoalMin" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar2"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvRunGoalMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="15dp"
+                            android:text="@string/DefaultRunGoalMax" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvRunStats"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:gravity="center"
+                        android:text="@string/tvStats" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:orientation="vertical"
+                            android:background="@color/colorLightGrey">
+
+                            <TextView
+                                android:id="@+id/tvWeekRun"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center"
+                                android:paddingTop="4dp"
+                                android:text="@string/tvWeek"
+                                android:textSize="30sp" />
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="1dp"
+                                android:layout_weight="1">
+
+                                <TableRow
+                                    android:id="@+id/trMon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/tvMonText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        android:text="@string/monday"
+                                        android:textStyle="bold|italic"/>
+
+                                    <TextView
+                                        android:id="@+id/tvMon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|right"
+                                        android:layout_marginLeft="32dp"
+                                        android:text="@string/DefaultRunGoalMin" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/trTue"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/tvTueText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        android:text="@string/tuesday"
+                                        android:textStyle="bold|italic" />
+
+                                    <TextView
+                                        android:id="@+id/tvTue"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|right"
+                                        android:layout_marginLeft="32dp"
+                                        android:text="@string/DefaultRunGoalMin" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/trWed"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/tvWedText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        android:text="@string/wednesday"
+                                        android:textStyle="bold|italic" />
+
+                                    <TextView
+                                        android:id="@+id/tvWed"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|right"
+                                        android:layout_marginLeft="32dp"
+                                        android:text="@string/DefaultRunGoalMin" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/trThur"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/tvThurText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        android:text="@string/thursday"
+                                        android:textStyle="bold|italic" />
+
+                                    <TextView
+                                        android:id="@+id/tvThur"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|right"
+                                        android:layout_marginLeft="32dp"
+                                        android:text="@string/DefaultRunGoalMin" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/trFri"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/tvFriText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        android:text="@string/friday"
+                                        android:textStyle="bold|italic" />
+
+                                    <TextView
+                                        android:id="@+id/tvFri"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|right"
+                                        android:layout_marginLeft="32dp"
+                                        android:text="@string/DefaultRunGoalMin" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/trSat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/tvSatText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        android:text="@string/saturday"
+                                        android:textStyle="bold|italic" />
+
+                                    <TextView
+                                        android:id="@+id/tvSat"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|right"
+                                        android:layout_marginLeft="32dp"
+                                        android:text="@string/DefaultRunGoalMin" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/trSun"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvSunText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        android:text="@string/sunday"
+                                        android:textStyle="bold|italic" />
+
+                                    <TextView
+                                        android:id="@+id/tvSun"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|right"
+                                        android:layout_marginLeft="32dp"
+                                        android:text="@string/DefaultRunGoalMin" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:elevation="5dp">
+
+                    <Button
+                        android:id="@+id/btnStartTrack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/buttonrectangle"
+                        android:text="@string/btnStartTracking" />
+
+                    <Button
+                        android:id="@+id/btnRunSettings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonrectangle"
+                        android:text="@string/Settings" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

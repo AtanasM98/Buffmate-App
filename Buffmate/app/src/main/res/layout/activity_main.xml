@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGrey"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle"
+                        android:gravity="center"
+                        android:elevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/LLProfile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/profilepic"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="16dp"
+                                    android:background="@drawable/circle"
+                                    android:src="@drawable/profile_pic_150px" />
+
+                                <TextView
+                                    android:id="@+id/tvUsername"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/user"
+                                    android:textSize="28sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/LLProfile"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="32dp"
+                                    android:layout_marginRight="32dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvAge"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:gravity="center"
+                                        android:text="@string/age"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:id="@+id/tvAgeValue"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:gravity="center"
+                                        android:text="0"
+                                        android:textSize="24sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="32dp"
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvWeight"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:gravity="center"
+                                        android:text="@string/weight"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:id="@+id/tvWeightValue"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:gravity="center"
+                                        android:text="0"
+                                        android:textSize="24sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/colorLightGrey"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvSteps"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Steps"
+                                android:textSize="45sp" />
+
+                            <TextView
+                                android:id="@+id/tvStepCount"
+                                android:textSize="34sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="150" />
+
+                            <ProgressBar
+                                android:id="@+id/pbSteps"
+                                style="?android:progressBarStyleHorizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:max="2500"
+                                android:minWidth="120dp"
+                                android:minHeight="120dp"
+                                android:progress="0"
+                                android:progressDrawable="@drawable/circle" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvCalIn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/CalorieIntake"
+                                android:textSize="45sp" />
+
+                            <TextView
+                                android:id="@+id/tvCalCount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="34sp"
+                                android:gravity="center"
+                                android:text="500cal" />
+
+                            <ProgressBar
+                                android:id="@+id/pbCalorie"
+                                style="?android:progressBarStyleHorizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minWidth="120dp"
+                                android:minHeight="120dp"
+                                android:max="2500"
+                                android:progress="0"
+                                android:progressDrawable="@drawable/circle"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorLightGrey"
+                        android:orientation="vertical"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:id="@+id/tvDerp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/weightGoal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/buttonrectangle"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:elevation="5dp">
+
+                            <TextView
+                                android:id="@+id/tvWeightGoalMin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:text="@string/DefaultWeightGoalMin" />
+
+                            <ProgressBar
+                                android:id="@+id/pbWeight"
+                                style="@android:style/Widget.ProgressBar.Horizontal"
+                                android:layout_width="270dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="16dp"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="0dp" />
+
+                            <TextView
+                                android:id="@+id/tvWeightGoalMax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingRight="4dp"
+                                android:text="@string/DefaultWeightGoalMax" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:background="@color/colorLightGrey"
+                        android:orientation="vertical"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:id="@+id/tvWater"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/dailyWater" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/buttonrectangle"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:elevation="5dp">
+
+                            <TextView
+                                android:id="@+id/tvWaGoalMin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:text="@string/DefaultWatGoalMin" />
+
+                            <ProgressBar
+                                android:id="@+id/pbWater"
+                                style="@android:style/Widget.ProgressBar.Horizontal"
+                                android:layout_width="270dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="16dp" />
+
+                            <TextView
+                                android:id="@+id/tvWatGoalMax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingRight="4dp"
+                                android:text="@string/DefaultWatGoalMax" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorLightGrey"
+                        android:orientation="vertical" />
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="0dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/buttonrectanglenogradient"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/colorAccent"
+        app:itemTextColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navigation"
+        android:elevation="10dp"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
