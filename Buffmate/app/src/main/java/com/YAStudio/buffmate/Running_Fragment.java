@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-
+// I've worked on this fragment as well.
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the

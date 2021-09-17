@@ -16,6 +16,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
+// Added MapsPopUp for google maps tracking activity.
+
 public class MapsPopUp extends AppCompatActivity {
 
     private static final int PERMISSION_EXTERNAL_READ = 0;

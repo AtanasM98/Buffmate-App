@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         stepCountRunning = true;
         Sensor counteSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
 
+        // Worked on Calorie tracker
         final TextView tvCalCount = findViewById(R.id.tvCalCount);
         final ProgressBar calorieTracker = findViewById(R.id.pbCalorie);
         String s = Globals.Cal + " Cal";
@@ -79,6 +80,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         stepCountRunning = false;
     }
 
+    // Worked on step tracker
     @Override
     public void onSensorChanged(SensorEvent event) {
         if(stepCountRunning){

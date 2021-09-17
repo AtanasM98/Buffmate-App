@@ -44,6 +44,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+// I have mostly done this tracking activity.
+
 public class MapsTrackingActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleMap.OnMyLocationButtonClickListener,
         GoogleMap.OnMyLocationClickListener {
